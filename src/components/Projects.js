@@ -3,7 +3,8 @@ import Container from "./Container";
 import Row from "./Row";
 import Col from "./Col";
 import Weather from "./demo.png";
-import Workday from "./workday.png"
+import Workday from "./workday.png";
+import LetsRun from "./background.jpg";
 
 class Projects extends Component {
   render() {
@@ -12,19 +13,22 @@ class Projects extends Component {
         <Container style={{ marginTop: 30 }}>
           <Row>
             <Col size="md-12">
-              <h1>Deployed Projects</h1>
+              <h1 style={{ color: "gray" }}>Deployed Projects</h1>
             </Col>
           </Row>
           <Row>
             <Col size="md-6">
-              <h3 class="ads">Weather Dashboard</h3>
+              <h3 style={{ color: "lime" }}>Weather Dashboard</h3>
               <p class="colors">
                 Upon launching current weather as well as next 5 days data is
                 received. Data includes: Temperature, Humidity, Wind, UV-Index,
                 Weather Icon, and Date.
               </p>
 
-              <a href="https://hmsalmans.github.io/Weather-Dashboard/" target="_blank">
+              <a
+                href="https://hmsalmans.github.io/Weather-Dashboard/"
+                target="_blank"
+              >
                 <img
                   src={Weather}
                   style={{ width: "200px" }}
@@ -33,42 +37,40 @@ class Projects extends Component {
               </a>
             </Col>
             <Col size="md-6">
-            <h3 class="ads">Workday Scheduler</h3>
-                    <p class="colors">You can schedule your day tasks as well as find previosuly performed tasks</p>
-                     <a
-                  href="https://hmsalmans.github.io/homework_5/"
-                  target="_blank"
-                >
-                  <img
-                    src={Workday}
-                    style={{ width: "200px" }}
-                    alt="Workday Scheduler"
-                  />
-                </a>
+              <h3 style={{ color: "lime" }}>Workday Scheduler</h3>
+              <p class="colors">
+                You can schedule your day tasks as well as find previosuly
+                performed tasks
+              </p>
+              <a href="https://hmsalmans.github.io/homework_5/" target="_blank">
+                <img
+                  src={Workday}
+                  style={{ width: "200px" }}
+                  alt="Workday Scheduler"
+                />
+              </a>
             </Col>
           </Row>
+          <br></br>
+          <br></br>
           <Row>
-            <Col size="md-6">
+            <Col size="md-12">
+              <h3 style={{ color: "lime" }}>Let's Run App</h3>
               <p>
-                I am Hafiz Muhammad Salman Saleem, a Full Stake Developer. I am
-                profecient in certain technologies including HTML, CSS,
-                Bootstrap, Javascript, Jquery and React. I have also mastered
-                the skills of Node.js, Express.js, data bases like mySQL and
-                Mongodb.
-               
+                One jogging application where you can view your route, local
+                weather, and possible music choices all within the same app!
               </p>
-            </Col>
-            <Col size="md-6">
-              <p>
-                Graduate in Master in Agriculture, the love of coding fell upon
-                me a little late and I am fortunate to make the change. I
-                graduated a full stack developer boot camp program from George
-                Washington University in Arlington Va. USA. I want to explore
-                this sea of information and am committed to learn new
-                technologies regularly to augment my knowledge of coding and
-                enhance my abilities to grow with this continuously changing
-                field.
-              </p>
+              <a
+                style={{ marginLeft: "300px" }}
+                href="https://johncosper.github.io/Project-1/"
+                target="_blank"
+              >
+                <img
+                  src={LetsRun}
+                  style={{ width: "500px" }}
+                  alt="Workday Scheduler"
+                />
+              </a>
             </Col>
           </Row>
         </Container>
