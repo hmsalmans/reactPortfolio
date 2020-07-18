@@ -24,7 +24,7 @@ I tried to build a multi-pag portfolio.
 
 ## Link to Heroku Deployed Portfolio  
 
-*https://git.heroku.com/salmanreactportfolio.git
+*https://salmanreactportfolio.herokuapp.com/
 
     
      
